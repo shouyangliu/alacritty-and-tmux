@@ -1,0 +1,73 @@
+import:
+ - ~/.config/alacritty/themes/themes/one_dark.yaml
+
+# 自动刷新
+live_config_reload: true
+# Tab 缩进
+tabspaces: 4
+# 背景透明度
+# window.opacity: 0.5
+background_opacity: 0.9
+
+shell:
+  program: /bin/fish
+  # windows
+  # program: c:\windows\system32\windowspowershell\v1.0\powershell.exe
+  args:
+    # login
+    - -l
+
+# 设置字体
+font:
+  normal:
+    family: "ComicShannsMono Nerd Font Mono"
+    style: Regular
+  bold:
+    family: "ComicShannsMono Nerd Font Mono"
+    style: Bold
+  italic:
+    family: "ComicShannsMono Nerd Font Mono"
+    style: Italic
+  bold_italic:
+    family: "ComicShannsMono Nerd Font Mono"
+    style: Bold Italic
+
+  # 字大小
+  size: 16.0 
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  # 窗口大小
+  dimensions:
+    columns: 120
+    lines: 60
+
+  # 边缘空白
+  padding:
+    x: 10
+    y: 15
+  dynamic_padding: false
+  startup_mode: Maximized
+  # 窗口修饰
+  # - full: 有边界 + 标题栏
+  # - none: 无边界 + 标题栏
+  decorations: none
+
+scrolling:
+  # 历史保留行数
+  history: 99999
+
+  # 每次滚动行数
+  multiplier: 20
+
+  # 每次滚动行数（分屏时）
+  faux_multiplier: 100
+
+  # 自动滚动至最新行
+  auto_scroll: true
